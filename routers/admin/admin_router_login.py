@@ -7,9 +7,9 @@ from utils.tokens.create_token import generate_token_admin
 
 from models.admin.admin_login_model import AdminUserModel
 
-admin_route = Blueprint('admin_routes', __name__ )
+admin_route_login = Blueprint('admin_routes', __name__ )
 
-@admin_route.route('/login', methods=['POST'])
+@admin_route_login.route('/', methods=['POST'])
 def login():
     try:
         user = request.json['username']

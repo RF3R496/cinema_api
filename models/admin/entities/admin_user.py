@@ -5,7 +5,6 @@ class AdminUser():
         self.last_name = last_name
         self.user = user 
         self.password = password
-        #self.telepone = telephone 
         self.created_at = created_at
         
 
