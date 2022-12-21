@@ -4,11 +4,12 @@ from decouple import config
 
 def get_connection():
     try:
+
         return psycopg2.connect(
-            host=config('PSGSQL_HOST'),
+            host=config('PGSQL_HOST'),
             user=config('PGSQL_USER'),
             password=config('PGSQL_PASSWORD'),
-            database=('PGSQL_DATABASE')
+            database=config('PGSQL_DATABASE')
         )
     except DatabaseError as ex:
         raise ex
