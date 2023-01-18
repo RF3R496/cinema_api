@@ -3,8 +3,6 @@
 from datetime import datetime, timedelta
 
 def expiration_time_days(days):
-    date = datetime.now() 
-    add = timedelta(days=days)
     #new = datetime.strftime(date,'%Y-%m-%d')
-    new_dt = date + add
+    new_dt = datetime.now() + timedelta(days=days)
     return new_dt

@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 def page_not_found(error):
-    return '<h1>Page not Found</h1>', 404
+    return '{"message":"Resource not found"}', 404
 
 
 if __name__ == '__main__':
